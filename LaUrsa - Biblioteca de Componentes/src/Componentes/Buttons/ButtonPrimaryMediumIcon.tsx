@@ -18,7 +18,7 @@ export function ButtonPrimaryMediumIcon({
     return (
         <button 
             disabled={disabled || isLoading} 
-            className={`bg-blue-500 text-white h-12 w-86 rounded-md border-solid cursor-pointer hover:bg-blue-400 active:bg-blue-700 ${disabled && !isLoading ? 'disabled:bg-gray-300 disabled:font-bold disabled:text-gray-400' : ''} flex items-center justify-center gap-2 ${className}`}
+            className={`${isLoading ? 'bg-blue-900' : 'bg-blue-500'} text-white h-12 w-86 rounded-md border-solid ${!isLoading ? 'cursor-pointer hover:bg-blue-400 active:bg-blue-700' : ''} ${disabled && !isLoading ? 'disabled:bg-gray-300 disabled:font-bold disabled:text-gray-400' : ''} flex items-center justify-center gap-2 ${className}`}
         >
             {isLoading ? (
                 <div className="flex items-center justify-center">

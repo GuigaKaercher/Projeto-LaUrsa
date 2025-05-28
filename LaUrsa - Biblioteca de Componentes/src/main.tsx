@@ -2,28 +2,38 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import {App} from './App.tsx'
-import {ButtonPrimaryMedium} from './Buttons/ButtonPrimaryMedium.tsx'
-import {ButtonPrimaryMediumIcon} from './Buttons/ButtonPrimaryMediumIcon.tsx'
-import { ButtonSecondaryMedium } from './Buttons/ButtonSecondaryMedium.tsx'
+import {ButtonPrimaryMedium} from './Componentes/Buttons/ButtonPrimaryMedium.tsx'
+import {ButtonPrimaryMediumIcon} from './Componentes/Buttons/ButtonPrimaryMediumIcon.tsx'
+import { ButtonSecondaryMedium } from './Componentes/Buttons/ButtonSecondaryMedium.tsx'
 
-import {AvatarImg} from './Avatars/AvatarImg.tsx'
-import {AvatarUser} from './Avatars/AvatarUser.tsx'
+import {AvatarImg} from './Componentes/Avatars/AvatarImg.tsx'
+import {AvatarUser} from './Componentes/Avatars/AvatarUser.tsx'
+import AvatarGroup from './Componentes/Avatars/AvatarGroup.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     
-    {/*<ButtonPrimaryMedium /> */}  
+    {/*<ButtonPrimaryMedium />  */} 
     
-    {/*<ButtonPrimaryMediumIcon /> */}
+    {/*<ButtonPrimaryMediumIcon /> */}   
     
-    {/*<ButtonSecondaryMedium /> */} 
+    {/*<ButtonSecondaryMedium />*/}   
     
 
-    {/*<AvatarImg/> */} 
-    <div style={{ display: 'flex', gap: '20px', padding: '20px' }}>
-      <AvatarUser size="sm" hasNotification={true} />
-    </div>
+
+    {/*<AvatarImg/>*/}
+    
+    {/*<AvatarUser size="xl" hasNotification={true} />*/}
+    
+    {/*<div style={{ display: 'flex', gap: '20px', padding: '10px' }}>
+      <AvatarUser size="xl" hasNotification={true} />  
+    </div>*/}
+
+    {/*<div style={{ padding: '10px' }}>
+      <AvatarGroup />
+    </div>*/}
+      
 
       
     

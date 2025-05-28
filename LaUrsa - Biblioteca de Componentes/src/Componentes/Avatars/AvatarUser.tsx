@@ -30,7 +30,7 @@ export function AvatarUser({ size = "md", src = '../public/user-off.png', fallba
             </Avatar>
             {hasNotification && (
                 <div 
-                    className="absolute rounded-full bg-green-500" 
+                    className="absolute rounded-full bg-red-500" 
                     style={{
                         width: `${Math.max(sizeMap[size] * 0.2, 10)}px`,
                         height: `${Math.max(sizeMap[size] * 0.2, 10)}px`,

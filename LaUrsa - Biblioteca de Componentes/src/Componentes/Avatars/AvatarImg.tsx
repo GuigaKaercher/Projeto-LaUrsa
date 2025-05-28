@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import type { CSSProperties } from "react"
+import { Avatar, AvatarFallback, AvatarImage } from "../../components/ui/avatar"
 
 interface AvatarImgProps {
     size?: "sm" | "md" | "large" | "xl";
@@ -7,7 +7,7 @@ interface AvatarImgProps {
     fallback?: string;
 }
 
-export function AvatarImg({ size = "md", src = '../public/bear.png', fallback = "Bear" }: AvatarImgProps) {
+export function AvatarImg({ size = "large", src = '../public/bear.png', fallback = "Bear" }: AvatarImgProps) {
     
     const sizeMap: Record<string, number> = {
         sm: 40,
